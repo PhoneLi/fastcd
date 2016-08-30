@@ -9,7 +9,8 @@ The code is ugly , and just quick and dirty work for myself.
 **It supports two usage ：**
 - **command-line**
 - **command-view : Need Install VIM**
-###command-line : 
+
+##command-line : 
 **In terminal . Input “fcd -h” And Press the Enter key**
 > ```
 > $user:~> fcd -h
@@ -25,12 +26,12 @@ The code is ugly , and just quick and dirty work for myself.
 > 
 > ```
 
-###command-view :
-####1: In terminal . Input "fcd" And Press the Enter key
+##command-view :
+###1: In terminal . Input "fcd" And Press the Enter key
 ```
 $user:~> fcd
 ```
-####2: Input your key-word for searching file/folder
+###2: Input your key-word for searching file/folder
 For Example , I want to search the file which called **/home/xxx-user/a/b/c/targer**
 > ```
 > targer //<-- you Input "targer" and Press the Enter key
@@ -40,7 +41,7 @@ For Example , I want to search the file which called **/home/xxx-user/a/b/c/targ
 > /home/xxx-user/a/b/c/targer-fake [2]
 > /home/xxx-user/a/b/c/targer-dummy [3]
 > ```
-####3: Input The Index For Select your target
+###3: Input The Index For Select your target
 For Example , My targer-file is 
 ```
 /home/xxx-user/a/b/c/targer [1]
@@ -53,7 +54,7 @@ So
 > ```
 
 # Install
-###1：Compiled code
+##1：Compiled code
 **make and copy binary into "~/tools/fcd.app"**
 
 > \$user:~> cd fastcd/ && make
@@ -62,7 +63,7 @@ So
 > \$user:~> cp fastcd.out ~/tools/fcd.app
 > 
 
-###2: Configure
+##2: Configure
 **vim .bashrc/.profile , Add : **
 > export PATH=/home/phoneli/tools:$PATH
 
