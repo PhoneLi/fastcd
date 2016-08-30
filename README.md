@@ -13,6 +13,7 @@ The code is ugly , and just quick and dirty work for myself.
 ##command-line : 
 **In terminal . Input “fcd -h” And Press the Enter key**
 > ```
+> $user:~> fcd flash
 > $user:~> fcd -h
 > 
 > usage fcd [ l | a | d | e | index ]
