@@ -412,7 +412,7 @@ int main(int argc, char* argv[])
 	{
 help:
 		printf( "\n" );
-		printf( "\e[0;33m usage %s [ l | a | d | e | index ]\n\e[0m" , argv[0] );
+		printf( "\e[0;33m usage %s [ l | p | flash | index | $key ]\n\e[0m" , argv[0] );
 		printf( "\e[0;33m l $line(d:line=10) : list\n\e[0m" );
 		printf( "\e[0;33m p $index : print the path of index\n\e[0m" );
 		printf( "\e[0;33m flash $path(d:path=$HOME) : refresh file index \n\e[0m" );
