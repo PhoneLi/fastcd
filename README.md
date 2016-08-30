@@ -78,6 +78,8 @@ So
 **2.2 Add fastcd/bashrc Into your .bashrc/.profile**
 
 
-##3: Build Idx File ( Only when the disk directory changes, we need to rebuild the index )
+##3: Build Idx File 
+
+**Only when the disk directory changes, we need to rebuild the index**
 
 > $user:~> fcd flash
