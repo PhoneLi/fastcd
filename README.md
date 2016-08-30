@@ -81,4 +81,4 @@ So
 
 ##3: Build Idx File
 
-> $user:~>fcd flash
+> $user:~> fcd flash
