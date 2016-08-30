@@ -1,6 +1,6 @@
 # What is fastcd ?
 - Search for files/folders , it becomes very easy and quick
-- You can search cpp/c definitions in VIM with using **fcd.vim**
+- You can search **CPP/C** definitions in VIM with using **fcd.vim**
 
 # About Code
 The code is ugly , and just quick and dirty work for myself.
@@ -31,6 +31,7 @@ The code is ugly , and just quick and dirty work for myself.
 ```
 $user:~> fcd
 ```
+
 ###2: Input your key-word for searching file/folder
 For Example , I want to search the file which called **/home/xxx-user/a/b/c/targer**
 > ```
@@ -41,6 +42,7 @@ For Example , I want to search the file which called **/home/xxx-user/a/b/c/targ
 > /home/xxx-user/a/b/c/targer-fake [2]
 > /home/xxx-user/a/b/c/targer-dummy [3]
 > ```
+
 ###3: Input The Index For Select your target
 For Example , My targer-file is 
 ```
@@ -57,13 +59,13 @@ So
 ##1：Compiled code
 **make and copy binary into "~/tools/fcd.app"**
 
-> \$user:~> cd fastcd/ && make
+> $user:~> **cd fastcd/ && make**
 > g++ -Wall -g fastcd.cpp -o fastcd.out -pthread -lncurses
 > 
-> \$user:~> cp fastcd.out ~/tools/fcd.app
+> $user:~> **cp fastcd.out ~/tools/fcd.app**
 > 
 
 ##2: Configure
 **vim .bashrc/.profile , Add : **
-> export PATH=/home/phoneli/tools:$PATH
+> **export PATH=/home/phoneli/tools:$PATH**
 
