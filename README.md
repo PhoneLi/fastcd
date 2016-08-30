@@ -45,9 +45,10 @@ For Example , I want to search the file which called **/home/xxx-user/a/b/c/targ
 
 ###3: Input The Index For Select your target
 For Example , My targer-file is 
-```
-/home/xxx-user/a/b/c/targer [1]
-```
+> ```
+> /home/xxx-user/a/b/c/targer [1]
+> ```
+
 So 
 > ```
 > :1 //<-- you Input ":1" and Press the Enter key
@@ -56,7 +57,7 @@ So
 > ```
 
 # Install
-##1：Compiled code
+##1: Compiled code
 **make and copy binary into "~/tools/fcd.app"**
 
 > \$user:~> cd fastcd/ && make
@@ -66,6 +67,6 @@ So
 > 
 
 ##2: Configure
-**vim .bashrc/.profile , Add : **
+**vim .bashrc/.profile , Add :**
 
 > export PATH=/home/phoneli/tools:$PATH
