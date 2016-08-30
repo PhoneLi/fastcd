@@ -70,4 +70,4 @@ So
 ##2: Configure
 **vim .bashrc/.profile , Add :**
 
-> export PATH=/home/phoneli/tools:$PATH
+> export PATH=/home/$user/tools:$PATH
