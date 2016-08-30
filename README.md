@@ -54,7 +54,10 @@ So
 > ```
 > :1 //<-- you Input ":1" and Press the Enter key
 > ---------------------------------------------------------
+> /home/xxx-user/a/b/c/targ [0]
 > /home/xxx-user/a/b/c/targer [1]
+> /home/xxx-user/a/b/c/targer-fake [2]
+> /home/xxx-user/a/b/c/targer-dummy [3]
 > ```
 
 # Install
