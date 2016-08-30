@@ -60,10 +60,11 @@ So
 ##1: Compiled code
 **make and copy binary into "~/tools/fcd.app"**
 
-> \$user:~> cd fastcd/ && make
+> $user:~> cd fastcd/ && make
+> 
 > g++ -Wall -g fastcd.cpp -o fastcd.out -pthread -lncurses
 > 
-> \$user:~> cp fastcd.out ~/tools/fcd.app
+> $user:~> cp fastcd.out ~/tools/fcd.app
 > 
 
 ##2: Configure
