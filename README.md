@@ -58,7 +58,7 @@ So
 > ```
 
 # Install
-##1: Compiled code
+##1: Compile
 **make and copy binary into "~/tools/fcd.app"**
 
 > $user:~> cd fastcd/ && make
@@ -72,3 +72,7 @@ So
 **vim .bashrc/.profile , Add :**
 
 > export PATH=/home/$user/tools:$PATH
+
+##3: Build Idx File
+
+> $user:~>fcd flash
