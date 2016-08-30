@@ -28,9 +28,10 @@ The code is ugly , and just quick and dirty work for myself.
 
 ##command-view :
 ###1: In terminal . Input "fcd" And Press the Enter key
-```
-$user:~> fcd
-```
+>```
+> $user:~> fcd
+> ```
+
 ###2: Input your key-word for searching file/folder
 For Example , I want to search the file which called **/home/xxx-user/a/b/c/targer**
 > ```
@@ -41,6 +42,7 @@ For Example , I want to search the file which called **/home/xxx-user/a/b/c/targ
 > /home/xxx-user/a/b/c/targer-fake [2]
 > /home/xxx-user/a/b/c/targer-dummy [3]
 > ```
+
 ###3: Input The Index For Select your target
 For Example , My targer-file is 
 ```
@@ -65,4 +67,5 @@ So
 
 ##2: Configure
 **vim .bashrc/.profile , Add : **
+
 > export PATH=/home/phoneli/tools:$PATH
