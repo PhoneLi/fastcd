@@ -16,7 +16,7 @@ The code is ugly , and just quick and dirty work for myself.
 > $user:~> fcd flash
 > $user:~> fcd -h
 > 
-> usage fcd [ l | a | d | e | index ]
+> usage fcd [ l | p | flash | index | $key ]
 > l $line(d:line=10) : list
 > p $index : print the path of index
 > flash $path(d:path=$HOME) : refresh file index 
