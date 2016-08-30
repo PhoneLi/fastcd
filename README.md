@@ -13,7 +13,6 @@ The code is ugly , and just quick and dirty work for myself.
 ##command-line : 
 **In terminal . Input “fcd -h” And Press the Enter key**
 > ```
-> $user:~> fcd flash
 > $user:~> fcd -h
 > 
 > usage fcd [ l | p | flash | index | $key ]
@@ -72,13 +71,13 @@ So
 > 
 
 ##2: Configure
-**vim .bashrc/.profile , Add :**
+**2.1 vim .bashrc/.profile , Add :**
 
 > export PATH=/home/$user/tools:$PATH
 
-**Add fastcd/bashrc Into your .bashrc/.profile**
+**2.2 Add fastcd/bashrc Into your .bashrc/.profile**
 
 
-##3: Build Idx File
+##3: Build Idx File ( Only when the disk directory changes, we need to rebuild the index )
 
 > $user:~> fcd flash
