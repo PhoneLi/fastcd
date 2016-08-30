@@ -76,7 +76,7 @@ So
 
 > export PATH=/home/$user/tools:$PATH
 
-**Add source-file:bashrc Into your .bashrc/.profile**
+**Add fastcd/bashrc Into your .bashrc/.profile**
 
 
 ##3: Build Idx File
