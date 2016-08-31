@@ -3,6 +3,7 @@
 
 # --> fcd
 alias cs='pcs() { cd `cat ~/.fastcd.pwd` && ls -l; }; pcs '
+alias csm='echo `pwd`" [path]" > ~/.fastcd.pwd'
 alias fcd=pfastcd
 
 pfastcd() {
