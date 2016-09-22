@@ -34,17 +34,18 @@ pfastcd() {
 		$app p $1 > $pwdf && cd `cat $pwdf`;
 	;;
 	*)
-		if [ $# -eq 1 ];then
-			grep -n $1 $conf | grep "\[path\]" > $tmpf
+		grep -n $1 $conf | grep "\[path\]" > $tmpf
+		if [ $# -eq 2 ];then
+			cd `head -n 1 $tmpf | awk -F: '{print $2}' | awk '{print $1}'`
 		else
-			grep -n $1 $conf > $tmpf
+			cat $tmpf | while read line ; do echo -e "\033[33m $line \033[0m" ; done; 
+			res=(`wc -l $tmpf`)
+			echo -e "\033[33m ========$res matched======== \033[0m"
+			if [ $res -eq 1 ] ; then 
+				cd `awk -F: '{print $2}' $tmpf | awk '{print $1}'` ; 
+			fi
 		fi
-		cat $tmpf | while read line ; do echo -e "\033[33m $line \033[0m" ; done; 
-		res=(`wc -l $tmpf`)
-		echo -e "\033[33m ========$res matched======== \033[0m"
-		if [ $res -eq 1 ] ; then 
-			cd `awk -F: '{print $2}' $tmpf | awk '{print $1}'` ; 
-		fi
+		return 0;
 	;;
 	esac
 };
