@@ -36,9 +36,13 @@ pfastcd() {
 	*)
 		grep -n $1 $conf | grep "\[path\]" > $tmpf
 		if [ $# -eq 2 ];then
-			cd `head -n 1 $tmpf | awk -F: '{print $2}' | awk '{print $1}'`
+			cd `head -n $2 $tmpf | tail -n +$2 | awk -F: '{print $2}' | awk '{print $1}'`
 		else
-			cat $tmpf | while read line ; do echo -e "\033[33m $line \033[0m" ; done; 
+			line_index=1
+			cat $tmpf | while read line ; do 
+				echo -e "\033[33m $line [$line_index] \033[0m" ; 
+				let "line_index = $line_index + 1"
+			done; 
 			res=(`wc -l $tmpf`)
 			echo -e "\033[33m ========$res matched======== \033[0m"
 			if [ $res -eq 1 ] ; then 
